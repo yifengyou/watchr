@@ -1,0 +1,15 @@
+#  watchr
+
+[Unit]
+Description=watchr project
+
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/watchr
+Restart=always
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=multi-user.target
